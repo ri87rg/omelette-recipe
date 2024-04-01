@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #834b35;
+  --secondary-color: #837b7a;
+}
+/* ------------------------------------------------------- */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3e5d8;
+  height: 250vh;
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+  }
+}
+.page .container {
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .page .container {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+.page .container .pic {
+  display: flex;
+  justify-content: center;
+}
+.page .container .pic img {
+  width: 540px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .page .container .pic img {
+    width: -webkit-fill-available;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+/* ------------------------------------------------------- */
+.page .container .content {
+  margin: 30px 30px 0;
+}
+.page .container .content .title {
+  color: #2e2d2b;
+  font-size: 32px;
+  font-weight: bold;
+}
+.page .container .content p {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+/* ------------------------------------------------------- */
+.page .container .content .time-container {
+  /* background-color: #fff7fc; */
+  background-color: #fee9f6;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+.page .container .content .time-container .time-content {
+  display: inline-block;
+  margin: 30px;
+  line-height: 30px;
+}
+.page .container .content .time-container .time-content h4 {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #8c1f4e;
+}
+.page .container .content .time-container .time-content .time {
+  margin-left: 20px;
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 600;
+}
+.page .container .content .time-container .time-content .time li span {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.page .container .content h1 {
+  color: #834b35;
+  margin-bottom: 20px;
+}
+.page .container .content .ingredients {
+  margin-left: 20px;
+  font-family: cursive;
+  font-size: 14px;
+  line-height: 25px;
+}
+.page .container .content .ingredients li {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-family: cursive;
+  line-height: 35px;
+}
+.page .container .content hr {
+  margin: 20px 0;
+}
+.page .container .content .instructions {
+  margin-left: 20px;
+  font-family: cursive;
+}
+.page .container .content .instructions li {
+  font-size: 14px;
+  font-family: cursive;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.page .container .content .instructions li span {
+  color: var(--secondary-color);
+  font-family: cursive;
+  font-weight: normal;
+}
+.page .container .content table {
+  margin: 20px;
+  width: 100%;
+  line-height: 25px;
+}
+.page .container .content table tr {
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 600;
+}
+.page .container .content table tr td {
+  border-bottom: 1px solid #bebebe;
+}
+.page .container .content table tr .first {
+  color: var(--secondary-color);
+}
+.page .container .content table tr .number {
+  color: var(--main-color);
+}
